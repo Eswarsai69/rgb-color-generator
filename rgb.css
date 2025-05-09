@@ -1,0 +1,125 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("backgroundimage.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+header{
+    padding: 20px 10px;
+    border-bottom: 5px solid #fff;
+    margin: 0 30px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.container{
+    margin: 50px 500px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 5px;
+    background: conic-gradient(blue, green, red);
+    box-shadow: 2px 5px 10px #fff;
+    align-items: center;
+    padding-left: 15px;
+    margin-left: 450px;
+    animation: myKeyFrame 1s ease-in-out infinite alternate;
+}
+#color-box{
+    width: 380px;
+    height: 200px;
+    background-color: black;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 15px rgb(0,0,0);
+    border-radius: 10px;
+}
+.sliders{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+label{
+    margin-right: 10px;
+}
+input{
+    width: 200px;
+    cursor: pointer;
+}
+span{
+    width: 30px;
+    display: inline-block;
+    text-align: center;
+}
+button{
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: aqua;
+    border-radius: 10px;
+    border: none;
+    width: 180px;
+    box-shadow: 2px 5px 15px #000;
+}
+button:active{
+    background-color: black;
+    color: white;
+}
+#red-slider{
+    margin-left: 15px;
+}
+#blue-slider{
+    margin-left: 11px;
+}#red-span,#green-span,#blue-span{
+    text-align: center;
+    margin-left: 10px;
+}
+.dialog-box{
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    padding: 20px 30px;
+    position: fixed;
+    bottom: 25px; 
+    left: 590px;  
+    border-radius: 20px;
+    border: 5px solid black;
+    font-weight: bold;
+}
+
+@keyframes myKeyFrame{
+    0%{
+        box-shadow: 0 0 5px white, 0 0 20px white;
+    }
+    100%{
+        box-shadow: 0 0 20px white, 0 0 40px white;
+    }
+}
+
+header h1 {
+    animation: slideIn 5s ease-out forwards;
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
