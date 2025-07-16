@@ -141,8 +141,7 @@ header h1 {
     }
 }
 
-/* ✅ Media Query for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 600) {
     .container {
         padding: 20px 10px;
     }
